@@ -1,15 +1,4 @@
-# from flask import Flask,jsonify,request, render_template, url_for
 
-
-# app = Flask(__name__) 
-
-# @app.route('/')
-# def index():
-#     return render_template('index.html')
-
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
 
 from flask import Flask, render_template, request, jsonify
 import os
@@ -53,4 +42,5 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
