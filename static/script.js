@@ -68,7 +68,8 @@ function deleteCard(event) {
     if (document.querySelectorAll('.vertical-card').length === 0) {
         submit.hidden = true;
         cardContainer.hidden = true;
-        inputFile.value = "";  // Clear the file input
+        inputFile.value = "";  // 
+        //Clear the file input
     }
 
     
